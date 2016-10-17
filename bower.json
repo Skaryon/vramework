@@ -1,0 +1,20 @@
+{
+  "name": "vramework",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Michael Klein <m.klein@wondermags.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/Skaryon/vramework",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "rill": "^2.4.0"
+  }
+}

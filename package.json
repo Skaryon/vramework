@@ -1,0 +1,26 @@
+{
+  "name": "vramework",
+  "version": "1.0.0",
+  "main": "./src/index.js",
+  "repository": {
+    "url": "https://github.com/Skaryon/vramework.git",
+    "type": "git"
+  },
+  "author": "Michael Klein <m.klein@wondermags.com>",
+  "license": "MIT",
+  "dependencies": {
+    "rill": "^2.4.0"
+  },
+  "devDependencies": {
+    "browserify": "^13.1.0",
+    "browserify-shim": "^3.8.12"
+  },
+  "browserify-shim": {
+    "./bower_components/rill/dist/rill.js": "rill"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  }
+}
