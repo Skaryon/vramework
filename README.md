@@ -1,6 +1,6 @@
 ![AVA](logo.png)
 # vramework
-> isomorphic rendering engine agnostic JavaScript framework with virtual DOM diffing and patching
+> Isomorphic, rendering engine agnostic JavaScript framework with virtual DOM diffing and patching
 
 This is the from of vramework, a JavaScript framework build on top of [vQuery](https://github.com/Skaryon/vQuery).
 It is still in it's early days. Proper documentation pending.
