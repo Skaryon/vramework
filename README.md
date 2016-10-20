@@ -1,18 +1,9 @@
 ![AVA](logo.png)
-# vQuery
+# vramework
 > isomorphic rendering engine agnostic JavaScript framework with virtual DOM diffing and patching
 
 This is the from of vramework, a JavaScript framework build on top of [vQuery](https://github.com/Skaryon/vQuery).
 It is still in it's early days. Proper documentation pending.
-
-### Supported CSS Selectors:
-
-* tagname
-* #id
-* .class
-* [attribute]
-    * [attribute=value]
-    * [attribute~=value]
 
 
 # Licence
