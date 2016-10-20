@@ -9,7 +9,10 @@
   "author": "Michael Klein <m.klein@wondermags.com>",
   "license": "MIT",
   "dependencies": {
-    "rill": "^2.4.0"
+    "immutable": "^3.8.1",
+    "redux": "^3.6.0",
+    "rill": "^2.4.0",
+    "vQuery": "https://github.com/Skaryon/vQuery.git"
   },
   "devDependencies": {
     "browserify": "^13.1.0",

@@ -10,12 +10,33 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="../dist/index.js"></script>
+        <script id="test-template" type="text/x-handlebars-template">
+            <div>hello {{world}}</div>
+        </script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
         <script src="http://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
         <script>
-            console.log(vramework)
+            vramework({
+                model: {
+                    test: "hi"
+                }
+            }, function(api){
+                api.registerComponent(api.component({
+                    name: "test",
+                    template: Handlebars.compile(document.getElementById('test-template').innerHTML)
+                }));
+                api.get("/test/lol", new api.View({
+                    component: "test",
+                    model: {
+                        world: "world"
+                    }
+                }));
+                api.start();
+            });
         </script>
     </head>
     <body>
+        <a href="/test/lol">click</a>
         <div id="test" class="test">
             <div>
                 <h1>
