@@ -3,13 +3,13 @@ var o = require('./options.js'),
     componentHandler = require('./componentHandler.js'),
     id=0;
 module.exports = function(optionsIn) {
+    id++;
     var options = Object.assign({
         model: {},
         component: null
     }, optionsIn, {
         id: id
     });
-    id++;
     var entryComponent = componentHandler.get(options.component);
     datastore.dispatch({
         type: "SET_VIEW_STATE",
