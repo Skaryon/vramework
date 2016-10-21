@@ -20,7 +20,7 @@ module.exports = function(optionsIn) {
     });
     function middleware(context, next) {
         var data = datastore.getState().toJS();
-        entryComponent.beforeRender(Object.assign(data[id], {_global:data.global}), function(data) {
+        entryComponent.beforeRender(Object.assign(data[options.id], {_global:data.global}), function(data) {
             entryComponent.render(data, function(html) {
                 entryComponent.afterRender(html, function(html) {
                     context.res.body = html;
